@@ -1,0 +1,145 @@
+body, html {
+    background-color: white;
+    height: 95%;
+    font-family: "Fantasque Sans Mono";
+}
+.content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.index-main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    color: #454871;
+    margin: auto;
+    width: 25%;
+    padding: 20px;
+    height: 150px;
+
+}
+
+.selfie {
+    width: 150px;
+    border-radius: 150px;
+    border: 4px solid #454871;
+}
+
+.social {
+    margin: auto;
+    width: 25%;
+    padding: 20px;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.socialImage:hover {
+    fill: darkgreen;
+}
+
+.socialImage {
+    cursor: pointer;
+    fill: #454871;
+}
+
+.skills {
+    margin: auto;
+    width: 23%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    place-items: center;
+    color: #454871;
+}
+
+.curly {
+    font-size: 8em;
+    text-align: center;
+    margin: auto;
+    padding: 0px 0px 20px 0px;
+}
+
+.horizontal-line {
+    border: 1px solid #454871;
+    width: 25%;
+}
+
+.links {
+    margin: auto;
+    width: 22%;
+    color: #454871;
+}
+
+summary {
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+summary:hover {
+    cursor: pointer;
+    border: 1px solid #454871;
+
+}
+
+details[open] > summary {
+    transition: background-color 0.5s;
+    background-color: #454871;
+    color: white;
+}
+
+details[open] summary ~ * {
+    animation-name: invisiblyGrowFontSize, fadeIn;
+    animation-duration: 500ms;
+    animation-delay: 0ms;
+}
+
+@keyframes invisiblyGrowFontSize {
+    0% {
+        font-size: 0;
+        opacity: 0;
+    }
+    100% {
+        font-size: 1em;
+        opacity: 0;
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+details > div {
+    border: 1px solid #454871;
+    padding: 10px;
+    margin: auto;
+}
+
+.sectionHeading {
+    display: flex;
+    place-items: center;
+}
+
+.sectionHeading > svg {
+    fill: #454871;
+    margin-left: 20px;
+
+}
+
+.footer {
+    text-align: center;
+    padding: 1px;
+    color: #454871;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
