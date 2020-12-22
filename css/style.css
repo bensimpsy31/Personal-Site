@@ -2,41 +2,38 @@ body, html {
     background-color: white;
     height: 95%;
     font-family: "Fantasque Sans Mono";
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .content {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    width: 450px;
+    margin: auto;
 }
 
 .index-main {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    place-items: center;
     background-color: white;
     color: #454871;
-    margin: auto;
-    width: 25%;
     padding: 20px;
     height: 150px;
-
 }
 
 .selfie {
     width: 150px;
     border-radius: 150px;
-    border: 4px solid #454871;
+    margin-right: 50px;
 }
 
 .social {
     margin: auto;
-    width: 25%;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: grid;
     text-align: center;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 20px;
 }
 
 .socialImage:hover {
@@ -50,28 +47,19 @@ body, html {
 
 .skills {
     margin: auto;
-    width: 23%;
     display: grid;
     grid-template-columns: 1fr 3fr;
+    padding: 15px;
     place-items: center;
     color: #454871;
 }
 
-.curly {
-    font-size: 8em;
-    text-align: center;
-    margin: auto;
-    padding: 0px 0px 20px 0px;
-}
-
 .horizontal-line {
     border: 1px solid #454871;
-    width: 25%;
 }
 
 .links {
-    margin: auto;
-    width: 22%;
+    display: block;
     color: #454871;
 }
 
@@ -84,6 +72,11 @@ summary:hover {
     cursor: pointer;
     border: 1px solid #454871;
 
+}
+
+
+*:focus {
+    outline: 1px solid #454871;
 }
 
 details[open] > summary {
@@ -134,12 +127,6 @@ details > div {
 
 }
 
-.footer {
-    text-align: center;
-    padding: 1px;
-    color: #454871;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+.content {
+    padding: 20px;
 }
