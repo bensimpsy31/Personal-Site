@@ -1,7 +1,9 @@
+@import url("/fonts/FantasqueSansMono/FantasqueSansMono-Regular-decl.css");
+
 body, html {
-    background-color: white;
+    background-color: #454871;
     height: 95%;
-    font-family: "Fantasque Sans Mono";
+    font-family: "Fantasque Sans Mono", monospace;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,13 +11,14 @@ body, html {
 .content {
     width: 450px;
     margin: auto;
+    background-color: white;
+    border-radius: 15px;
 }
 
 .index-main {
     display: flex;
     justify-content: center;
     place-items: center;
-    background-color: white;
     color: #454871;
     padding: 20px;
     height: 150px;
